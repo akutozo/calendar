@@ -4,4 +4,5 @@ let $today = $('#currentDay');
 $today.text(now);
 
 //Let's store some information
-let dailyAgenda = JSON.parse(localStorage.getItem("dailyAgenda"));
+// let dailyAgenda = JSON.parse(localStorage.getItem("dailyAgenda"));
+
