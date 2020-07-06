@@ -14,4 +14,4 @@ Credits:
 * Documentation
 * Grant Emerson
 
-![Daily Planner](/assets/images/Capture.jpg "Final Version")
+![Planner](/assets/images/Capture.JPG "Final Version")
