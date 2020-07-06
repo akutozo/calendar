@@ -128,3 +128,41 @@ $( document ).ready(function() {
 const now = moment().format('MMMM Do YYYY');
 let $today = $('#currentDay');
 $today.text(now);
+
+var currentTime = moment().format("dddd MMMM Do YYYY, h:mm a");
+var currentTimeInt = moment().hour();
+console.log(currentTimeInt);
+
+$(".row9").attr("data-time", moment("9:00am", "h:mm a").format("HH"));
+$(".row10").attr("data-time", moment("10:00am", "h:mm a").format("HH"));
+$(".row11").attr("data-time", moment("11:00am", "h:mm a").format("HH"));
+$(".row12").attr("data-time", moment("12:00pm", "h:mm a").format("HH"));
+$(".row1").attr("data-time", moment("1:00pm", "h:mm a").format("HH"));
+$(".row2").attr("data-time", moment("2:00pm", "h:mm a").format("HH"));
+$(".row3").attr("data-time", moment("3:00pm", "h:mm a").format("HH"));
+$(".row4").attr("data-time", moment("4:00pm", "h:mm a").format("HH"));
+$(".row5").attr("data-time", moment("5:00pm", "h:mm a").format("HH"));
+
+for (var i = 1; i <= 12; i++) {
+    var inputTime = $("." + "row" + i).attr("data-time");
+    var inputTimeInt = parseInt(inputTime);
+    console.log("current time is " + inputTimeInt);
+    console.log("current time is " + currentTimeInt);
+
+    if (currentTimeInt === inputTimeInt) {
+        $("." + "row" + i).removeClass("past");
+        $("." + "row" + i).addClass("present");
+        $("." + "row" + i).removeClass("future");
+    }
+
+    if (currentTimeInt > inputTimeInt) {
+        $("." + "row" + i).removeClass("present");
+        $("." + "row" + i).removeClass("future");
+        $("." + "row" + i).addClass("past");
+    }
+    if (currentTimeInt < inputTimeInt) {
+        $("." + "row" + i).removeClass("present");
+        $("." + "row" + i).addClass("future");
+        $("." + "row" + i).removeClass("past");
+    }
+}
