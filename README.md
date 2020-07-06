@@ -8,10 +8,12 @@ Designed with intent for people with driven intentions.
 * CSS
 * Javascript
 
-Credits:
+## Credits:
 
 * Google
 * Documentation
 * Grant Emerson
+
+Hosted at: https://akutozo.github.io/calendar/
 
 ![Planner](/assets/images/Capture.JPG "Final Version")
