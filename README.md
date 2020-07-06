@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-# Work Day Scheduler Starter Code
-=======
-# calendar
->>>>>>> 52071e4c6d0199e7c23581be19b6e06f15f82407
+# Daily Planner.
+
+## Purpose
+Designed with intent for people with driven intentions.
+
+## Built With
+* HTML
+* CSS
+* Javascript
+
+Credits:
+
+* Google
+* Documentation
+* Grant Emerson
+
+![Daily Planner](/assets/images/Capture.jpg "Final Version")
